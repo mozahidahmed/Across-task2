@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../firebase.init';
 
 const SignUp = () => {
-
+    const navigate = useNavigate()
     const [ createUserWithEmailAndPassword, user,] = useCreateUserWithEmailAndPassword(auth);
 
     const handleSignUp = e => {
@@ -16,7 +16,7 @@ const SignUp = () => {
     }
 
     if (user) {
-        console.log(user);
+        navigate('/')
     }
 
     return (
