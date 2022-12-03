@@ -18,8 +18,8 @@ const NavbarHead = () => {
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                            {
-                            user ?  <span className='fw-bold' onClick={() => signOut(auth)}>Logout</span>:  <Link to='/signIn'
-                            className="nav-link active" aria-current="page" >Log In</Link>
+                            user ?  <span className='fw-bold btn border-style  px-4' onClick={() => signOut(auth)}>Logout</span>:  <Link to='/signIn'
+                            className="fw-bold btn border-style  px-4" aria-current="page" >Log In</Link>
                            }
                             
                         </li>

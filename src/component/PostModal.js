@@ -11,7 +11,7 @@ const PostModal = ({show, setShow}) => {
 
         const data = {title, description}
 
-        fetch('https://immense-citadel-78891.herokuapp.com/post', {
+        fetch('https://banaologin.onrender.com/post', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

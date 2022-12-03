@@ -16,7 +16,7 @@ const Post = ({ post, handleDelete, handleUpdate }) => {
         const comment = e.target.comment.value;
         
 
-        fetch(`https://immense-citadel-78891.herokuapp.com/comment/${_id}`, {
+        fetch(`https://banaologin.onrender.com/comment/${_id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

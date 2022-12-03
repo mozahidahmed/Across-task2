@@ -11,7 +11,7 @@ const AllPost = () => {
 
     const handleDelete = id => {
 
-        const url = `https://immense-citadel-78891.herokuapp.com/posts/${id}`
+        const url = `https://banaologin.onrender.com/posts/${id}`
         fetch(url, {
             method: "DELETE"
         })
@@ -33,7 +33,7 @@ const AllPost = () => {
         const data = { title, description }
         console.log(updateId);
 
-        fetch(`https://immense-citadel-78891.herokuapp.com/postUpdate/${updateId}`, {
+        fetch(`https://banaologin.onrender.com/postUpdate/${updateId}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ const AllPost = () => {
     }
 
     useEffect(() => {
-        fetch('https://immense-citadel-78891.herokuapp.com/posts')
+        fetch('https://banaologin.onrender.com/posts')
             .then(res => res.json())
             .then(data => setPosts(data))
     }, [posts])

@@ -13,6 +13,13 @@
   }
 }
 
+.border-style{
+  border: 1px solid #03A9F4;
+}
+.border-style:hover{
+  border: 1px solid #03A9F4;
+}
+
 .reset {
   max-width: 300px;
   min-height: 100px;
